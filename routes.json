@@ -1,0 +1,22 @@
+{
+    "routes": [
+      {
+        "route": "/index.html",
+        "allowedRoles": ["reader"]
+      }
+
+      
+    ],
+    "platformErrorOverrides": [
+      {
+        "errorType": "NotFound",
+        "serve": "/404.html",
+        "statusCode": 404
+      },
+      {
+        "errorType": "Unauthenticated",
+        "serve": "/login.html",
+        "statusCode": 401
+      }
+    ]
+  }
